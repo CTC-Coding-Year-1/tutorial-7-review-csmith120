@@ -18,8 +18,8 @@ input,select,textarea{
    background-color: rgb(255,255,180);
 }
 
-input#nameBox:focus:valid,
-input#phoneBox:focus:valid{
+input#nameBox:valid,
+input#phoneBox:valid{
    background: rgb(220,255,220) url(../png/rb_okay.png) bottom right/no-repeat; 
 }
 
