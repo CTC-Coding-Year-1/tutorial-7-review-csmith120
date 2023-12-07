@@ -19,12 +19,14 @@
    <title>Red Ball Pizza Build a Pizza</title>
    <link href="../css/rb_base.css" rel="stylesheet" />
    <link href="../css/rb_styles2.css" rel="stylesheet" />
+   <link href="../css/rb_forms2.css" rel="stylesheet" />
+   <link href="../script/rb_formsubmit2.js" rel="script" />
 </head>
 
 <body>
    <header>
-      <img src="rb_logo2.png" alt="Red Ball Pizza" id="logoimg" />
-      <nav> <a id="navicon" href="#"><img src="rb_navicon2.png" alt="" /></a>
+      <img src="../png/rb_logo2.png" alt="Red Ball Pizza" id="logoimg" />
+      <nav> <a id="navicon" href="#"><img src="../png/rb_navicon2.png" alt="" /></a>
          <ul>
             <li><a href="#">home</a></li>
             <li><a href="#">menu</a></li>
@@ -43,6 +45,42 @@
          into two regions to give your friends a wide choice of toppings
          and flavors.</p>
          
+         <from>
+            <div>
+               <lable for="quantityBox">Quantity</lable>
+               <input type="number" name="pizzaQuantity" id="quantityBox"
+               value="1" step="1" min="1" max="10">
+            </div>
+            
+            <div>
+               <img src="../png/rb_sizes.png" alt="">
+               <label for="sizeBox">Pizza Size</label>
+               <input type="range" name="pizzaSize" id="sizeBox"
+               min="10" max="16" step="2" value="14">
+            </div>
+
+            <div>
+               <label for="crustBox">Pizza Crust</label>
+               <select name="pizzaCrust" id="crustBox">
+                  <option value="thin">Thin</option>
+                  <option value="thick">Thick</option>
+                  <option value="stuffed">Stuffed</option>
+                  <option value="pan">Pan</option>
+               </select>
+            </div>
+
+            <div>
+               <input type="checkbox" name="doubleCheese" id="cheeseBox">
+               <label for="cheeseBox">Double Cheese</label>
+
+               <input type="checkbox" name="doubleSauce" id="sauceBox">
+               <label for="sauceBox">Double Sauce</label>
+            </div>
+
+            <fieldset>
+               <legend>Meat Toppings</legend>
+            </fieldset>
+         </from>
    </section>
 
    <footer>
